@@ -662,6 +662,9 @@
 <script src="./assets/viewer/viewer.min.js"></script>
 <script>
   var viewer = new Viewer(document.getElementById("viewer"), {
+    // Keep repeated touch drags from switching images or toggling the zoom level.
+    slideOnTouch: false,
+    toggleOnDblclick: false,
     toolbar: {
       zoomIn: true,
       zoomOut: true,
