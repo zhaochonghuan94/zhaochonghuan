@@ -203,6 +203,26 @@ progress::-moz-progress-value {
 mark {
   background: rgba(232, 232, 232, 0.8); }
 
+/* Keep touch targets larger than Viewer.js defaults. */
+.viewer-container .viewer-toolbar > ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 12px; }
+  .viewer-container .viewer-toolbar > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 48px;
+    float: none;
+    width: 48px;
+    height: 48px;
+    margin: 0; }
+    .viewer-container .viewer-toolbar > ul > li::before {
+      margin: 0;
+      transform: scale(1.4); }
+
 @media screen and (max-width: 1169px) {
   .container .info-unit h3 span {
     display: block; }

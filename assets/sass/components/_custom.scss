@@ -71,6 +71,32 @@ progress::-moz-progress-value {
 mark{
 	background: rgba(232,232,232,.8);
 }
+
+/* Keep touch targets larger than Viewer.js defaults. */
+.viewer-container .viewer-toolbar > ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 12px;
+
+    > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 48px;
+        float: none;
+        width: 48px;
+        height: 48px;
+        margin: 0;
+
+        &::before {
+            margin: 0;
+            transform: scale(1.4);
+        }
+    }
+}
+
 //移动端适配，右侧时间跨行宽度
 @media screen and (max-width: 1169px){
 	
@@ -142,7 +168,6 @@ mark{
 		display: none;
 	}
 }
-
 
 
 

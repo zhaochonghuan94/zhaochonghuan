@@ -1,0 +1,7 @@
+# Git commit message language
+
+When generating Git commit messages for this repository:
+- Always write the subject and body in Simplified Chinese, even if previous commits are in English.
+- Keep code identifiers, file paths, commands, and proper names in their original form.
+- If using Conventional Commits, keep the type and scope unchanged and write the description in Simplified Chinese.
+- Return only the commit message, without explanations or Markdown code fences.
