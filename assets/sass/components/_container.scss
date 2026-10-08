@@ -5,6 +5,10 @@
  * ------------------------------------------------- */
 
 .container{
+	img[loading="lazy"]{
+		height: auto;
+	}
+
 	// 侧边栏
 	.side{
 		position: absolute;

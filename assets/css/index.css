@@ -28,6 +28,9 @@ body {
 /* -------------------------------------------------
  * 主体部分
  * ------------------------------------------------- */
+.container img[loading="lazy"] {
+  height: auto; }
+
 .container .side {
   position: absolute;
   width: 20rem;
